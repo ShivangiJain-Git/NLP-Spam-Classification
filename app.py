@@ -1,15 +1,16 @@
+import joblib
 from flask import Flask,render_template,url_for,request
 import pandas as pd 
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
 import pickle
 
 # load the model from disk
 filename = 'spam_classifier_model.pkl'
 clf = pickle.load(open(filename, 'rb'))
-cv=pickle.load(open('cv_tranform.pkl','rb'))
+cv=pickle.load(open('cv_transform.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
