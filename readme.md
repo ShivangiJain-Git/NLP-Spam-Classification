@@ -1,38 +1,16 @@
-# DOMAIN : BANKING 
+# DOMAIN : Tele Communication
 
 - ### CONTEXT 
- CNB Bank deals in all kinds of car loans. Customer first apply for loan after that company validates the customer eligibility for loan. In case the 
- borrower doesn’t pay back the loan, the losses are to be incurred by the bank. LGD stands for Loss given default so it means when a customer at a 
- bank defaults on his loan how much money does the bank lose. The customer might have paid some amount back or no amount at all.The bank wants to
- know if the amount the bank loses can be predicted for new customers who apply for a loan from the past data of all defaulters and their pending 
- amounts.
+ A collection of SMS spam messages extracted manually from the Grumbletext Web site. This is a UK forum in which cell phone users make public claims about SMS spam messages, most of them without reporting the very spam message received. The identification of the text of spam messages in the claims is a very hard and time-consuming task, and it involved carefully scanning hundreds of web pages. The Grumbletext Web site is: http://www.grumbletext.co.uk/
+-A list of 450 SMS ham messages collected from Caroline Tag's PhD Theses available at http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf
+-A subset of 3,375 SMS ham messages of the NUS SMS Corpus (NSC), which is a corpus of about 10,000 legitimate messages collected for research at the Department of Computer   Science at the National University of Singapore.
+ The messages largely originate from Singaporeans and mostly from students attending the University. These messages were collected from volunteers who were made aware that their contributions were going to be made publicly 
+ available. The NUS SMS Corpus is avalaible at: http://www.comp.nus.edu.sg/~rpnlpir/downloads/corpora/smsCorpus/
+-The amount of 1,002 SMS ham messages and 322 spam messages extracted from the SMS Spam Corpus v.0.1 Big created by José María Gómez Hidalgo and public available at: http://www.esp.uem.es/jmgomez/smsspamcorpus/
 
 
 - ### PROBLEM
- The bank wants to automate the loss estimation based on customer detail provided while applying for loan. These details are Age, Years of Experience,
- Number of cars, Gender,Marital Status. To automate this process, they have given a problem to identify the loss estimation given that the customers
- is a defaulter, those are eligible for loan amount so that they get to know what features are leading to defaults up to which amount. Here are the
- details about the data set: 
-
-
-- ### DATASET
-  LGD.csv
-
-Variable - Description 
-
-1. Ac_No - The account of customer used as identifier  
-
-2. Age - Age of borrower (16-70) 
-
-3. Years of Experience - Working experience (0-53) 
-
-4. Number of Cars - Possessed cars (1, 2, 3, 4) 
-
-5. Gender - Male/Female 
-
-6. Married - Married/Single 
-
-7. Loss in Thousands - Target variable
+ It is very tedious task to classify SMS messages by manually reading it. 
 
 - ### Notebook 
-  Linear_Regression_LGD_Dataset/ipynb
+  Spam_classification.ipynb
