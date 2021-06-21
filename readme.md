@@ -1,5 +1,5 @@
 # Natural Language Processing 
-### [App Link](https://spamclassificationapp.herokuapp.com/)
+### [Spam Classifier App Link](https://spamclassificationapp.herokuapp.com/)
   
 - ### CONTEXT 
   Spam Classification is a case study where SMS messages are classified based on legitimate messages or spam. The SMS Spam Collection corpus has SMS tagged messages that have been   collected for SMS Spam research. It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam
